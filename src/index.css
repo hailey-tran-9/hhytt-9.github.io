@@ -1,0 +1,273 @@
+@font-face {
+  font-family: pixelmania;
+  src: url("pixelmania.ttf");
+}
+
+.pixelmania {
+  font-family: pixelmania;
+}
+
+@font-face {
+  font-family: depixelklein;
+  src: url("depixelklein.ttf");
+}
+
+.depixelklein {
+  font-family: depixelklein;
+}
+
+li::marker {
+  content: '- ';
+  font-family: depixelklein;
+  font-size: 1.2em;
+}
+
+/* Padding, Margins, Spacing */
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.pr-3 {
+  padding-right: 3rem;
+}
+
+.plr-025 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.center {
+  margin: auto;
+}
+
+#gameStartOverlay {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+}
+
+#gameStartHeader {
+  margin-bottom: 2rem;
+}
+
+#regContainer {
+  position: absolute;
+  left: 25%;
+}
+
+.regUI {
+  position: absolute;
+
+  /* top: 36px; */
+
+  width: 362px;
+  height: 592px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  visibility: hidden;
+}
+
+.regTab {
+  width: 90.38px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: 1;
+}
+
+.regTab:active {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#regTab1 {
+  background-image: url("/imgs/RegTab1.png");
+}
+
+#regTab1:active {
+  background-image: url("/imgs/RegTabP1.png");
+}
+
+#regTab2 {
+  background-image: url("/imgs/RegTab2.png");
+}
+
+#regTab2:active {
+  background-image: url("/imgs/RegTabP2.png");
+}
+
+#regTab3 {
+  background-image: url("/imgs/RegTab3.png");
+}
+
+#regTab3:active {
+  background-image: url("/imgs/RegTabP3.png");
+}
+
+#regTab4 {
+  background-image: url("/imgs/RegTab4.png");
+}
+
+#regTab4:active {
+  background-image: url("/imgs/RegTabP4.png");
+}
+
+.tab {
+  position: absolute;
+  width: 97.5px;
+  height: 45px;
+  z-index: 1;
+}
+
+#tab2 {
+  width: 82.5px;
+  left: 97.5px;
+}
+
+#tab3 {
+  width: 82.5px;
+  left: 180px;
+}
+
+#tab4 {
+  left: 262.5px;
+}
+
+#tab1:active ~ #charStatBlock { background-image: url("/imgs/CharStatBlockP.png"); }
+#tab2:active ~ #inventory { background-image: url("/imgs/InventoryP.png"); }
+#tab3:active ~ #skills { background-image: url("/imgs/SkillsP.png"); }
+#tab4:active ~ #projects { background-image: url("/imgs/ProjectsP.png"); }
+
+.tab p {
+  color: gray;
+}
+
+#tab1 p {
+  padding-top: 10%;
+  padding-left: 35%;
+  padding-right: 20%;
+}
+
+#tab2 p, #tab3 p {
+  padding-top: 13%;
+}
+
+#tab4 p {
+  padding-top: 10%;
+  padding-left: 20%;
+  padding-right: 25%;
+}
+
+.arrow {
+  position: absolute;
+  width: 30px;
+  height: 52px;
+  z-index: 1;
+}
+
+#arrowL {
+  left: 32px;
+  bottom: 154px;
+}
+
+#arrowR {
+  right: 32px;
+  bottom: 154px;
+}
+
+#projects:has(#arrowL:active) { background-image: url("/imgs/ProjLeft.png"); }
+#projects:has(#arrowR:active) { background-image: url("/imgs/ProjRight.png"); }
+
+#charStatBlock {
+  background-image: url("/imgs/CharStatBlock.png");
+}
+
+#inventory {
+  background-image: url("/imgs/Inventory.png");
+}
+
+#skills {
+  background-image: url("/imgs/Skills.png");
+}
+
+#projects {
+  width: 658px;
+  height: 492px;
+
+  background-image: url("/imgs/Projects.png");
+}
+
+#scrollable {
+  width: auto;
+  height: 174px;
+  overflow: auto;
+}
+
+#speechBubble {
+  position: absolute;
+  bottom: 20rem;
+
+  width: 372px;
+  height: 188px;
+  background-image: url("/imgs/SpeechBubble.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  /* visibility: hidden; */
+}
+
+#speechBubbleContainer {
+  position: relative;
+  margin: auto;
+  width: 300px;
+  height: 100px;
+}
+
+#speechBubbleText {
+  position: relative;
+  padding-top: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+#characterDisplay {
+  width: auto;
+  height: 17.5rem;
+
+  position: absolute;
+  bottom: 3rem;
+
+  /* visibility: hidden; */
+}
+
+#adelie {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 9.5rem;
+  transform: scaleX(-1);
+}
+
+#littleBlue {
+  position: absolute;
+  bottom: 1rem;
+  right: 5.5rem;
+  transform: scaleX(-1);
+}
